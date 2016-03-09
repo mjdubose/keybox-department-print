@@ -69,7 +69,7 @@ namespace LockBoxPins
             //Add Properties to Data Grid View
             DataGrid1.Location = new Point(10, 10);
             DataGrid1.Size = new Size(690, 435);
-            DataGrid1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
+            DataGrid1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.ColumnHeader;
             DataGrid1.AllowUserToAddRows = false;
 
 
@@ -85,18 +85,18 @@ namespace LockBoxPins
             Controls.Add(DataGroup);
         }
 
-        private void OnClickExit(object sender, System.EventArgs e)
+        private void OnClickExit(object sender,EventArgs e)
         {
             Close();
         }
 
-        private void OnClickAbout(object sender, System.EventArgs e)
+        private void OnClickAbout(object sender, EventArgs e)
         {
             AboutBox1 Aboutbox1 = new AboutBox1();
             Aboutbox1.Show();
         }
 
-        private void OnClickImport(object sender, System.EventArgs e)
+        private void OnClickImport(object sender, EventArgs e)
         {
             //Initialize Excel Components.
             Excel.Workbook xlWorkBook;
@@ -104,7 +104,7 @@ namespace LockBoxPins
             Excel.Application xlApp = new Excel.Application();
 
             OpenFileDialog of = new OpenFileDialog();
-            of.Filter = "Excel Files(.xls)|*.xls| Excel Files(.xlsx)|*.xlsx| Excel Files(*.xlsm)|*.xlsm";
+            of.Filter = "Excel Files(.xlsx)|*.xlsx| Excel Files(.xls)|*.xls| Excel Files(*.xlsm)|*.xlsm";
             of.Title = "Open Excel File to Work with";
 
             //If Excel file is opened.

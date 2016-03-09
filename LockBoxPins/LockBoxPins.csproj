@@ -15,7 +15,7 @@
     <ManifestCertificateThumbprint>D6841D2A6EF79451B3A0973CF805F16833E1D61E</ManifestCertificateThumbprint>
     <ManifestKeyFile>LockBoxPins_TemporaryKey.pfx</ManifestKeyFile>
     <GenerateManifests>true</GenerateManifests>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
